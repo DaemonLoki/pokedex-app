@@ -15,6 +15,12 @@ class PokeCell: UICollectionViewCell {
     
     var pokemon: Pokemon!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        // set properties of the cell if needed
+    }
+    
     func configureCell(pokemon: Pokemon) {
         self.pokemon = pokemon
         
