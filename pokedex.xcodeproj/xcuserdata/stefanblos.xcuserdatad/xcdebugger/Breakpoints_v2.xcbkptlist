@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pokedex/ViewController.swift"
-            timestampString = "475518630.700542"
+            timestampString = "475521001.792493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "parseCSVFile()"
             landmarkType = "5">
          </BreakpointContent>
