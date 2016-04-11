@@ -105,12 +105,6 @@ class Pokemon {
                     self._weight = weight
                 }
                 
-                print("attack is: " + self._attack)
-                print("defense is: " + self._defense)
-                print("height is: " + self._height)
-                print("health is: " + self._health)
-                print("weight is: " + self._weight)
-                
                 if let evoDict = dict["evolutions"] as? [Dictionary<String, AnyObject>] {
                     if evoDict.count != 0 {
                         if let level = evoDict[0]["level"] as? Int {
@@ -151,8 +145,6 @@ class Pokemon {
                     }
                 }
                 
-                print("Types: " + self._type)
-                
                 if let descriptions = dict["descriptions"] as? [Dictionary<String, String>] {
                     if let uri = descriptions[0]["resource_uri"] {
                         let urlDesc = NSURL(string: "\(URL_BASE)\(uri)")!
@@ -163,7 +155,6 @@ class Pokemon {
                             if let descDict = desResult.value as? Dictionary<String, AnyObject> {
                                 if let descripString = descDict["description"] as? String {
                                     self._description = descripString.stringByReplacingOccurrencesOfString("POKMON", withString: "pokemon")
-                                    print("Description of pokemon is: " + self._description)
                                 }
                             }
                             
